@@ -14,7 +14,8 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint src --ext js,jsx --quiet",
     "lint-fix": "./node_modules/.bin/eslint src --ext js,jsx --fix",
-    "test": "node_modules/jest/bin/jest.js --notify --detectOpenHandles"
+    "test": "./node_modules/jest/bin/jest.js --notify --detectOpenHandles",
+    "coveralls": "./node_modules/.bin/coveralls"
   },
   "dependencies": {
     "@babel/preset-env": "^7.8.7",
