@@ -1,0 +1,47 @@
+{
+  "name": "@zingle/ui-components",
+  "version": "0.0.0",
+  "description": "Client UI Components",
+  "engines": {
+    "node": ">=10.18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Zingle/ui-components.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src --ext js,jsx --quiet",
+    "lint-fix": "./node_modules/.bin/eslint src --ext js,jsx --fix",
+    "test": "node_modules/jest/bin/jest.js --notify --detectOpenHandles"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.8.7",
+    "aphrodite": "^2.4.0",
+    "autoprefixer": "^6.7.7",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "classnames": "^2.2.6",
+    "color": "^3.1.2",
+    "date-fns": "^2.10.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "react": "^16.0",
+    "react-feather": "^1.1.6",
+    "react-onclickoutside": "^6.9.0",
+    "react-router-dom": "^5.1.2",
+    "scroll-into-view-if-needed": "^2.2.24"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-dynamic-import-node": "^2.3.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "esm": "^3.2.25",
+    "jest": "^25.1.0"
+  }
+}
