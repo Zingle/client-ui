@@ -1,5 +1,4 @@
 import { getApproximateDiffString } from '../get-timestamp-string';
-import moment from "moment";
 
 describe('getApproximateDiffString', () => {
     it('returns difference in words when hour and minutes both have value', () => {

@@ -5,6 +5,7 @@
   "engines": {
     "node": ">=10.18"
   },
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/Zingle/ui-components.git"
@@ -39,6 +40,7 @@
     "babel-plugin-dynamic-import-node": "^2.3.0",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "coveralls": "^3.0.9",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.19.0",
     "esm": "^3.2.25",
