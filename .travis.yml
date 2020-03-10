@@ -7,5 +7,4 @@ cache:
 script:
   - npm run lint
   - npm test --coverage --coverageReporters=text-lcov > coverage.report
-before_deploy: npm build
-after_deploy: cat coverage.report | npm run coveralls
+after_success: cat coverage.report | npm run coveralls
