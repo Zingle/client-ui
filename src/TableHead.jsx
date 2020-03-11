@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet as coreStyleSheet } from 'aphrodite/no-important';
-import descendantSelectorExtension from '../utilities/descendant-selector-aphrodite-extention';
+import descendantSelectorExtension from './utilities/descendant-selector-aphrodite-extention';
 import { guide as styleGuide } from './style';
 
 // allows use of descendant css selector
