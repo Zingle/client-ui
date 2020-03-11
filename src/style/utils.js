@@ -1,5 +1,4 @@
 import styleGuide from './guide';
-// import { theme } from '@m/alchemy-ui';
 
 export const clearfix = {
     ':after': {

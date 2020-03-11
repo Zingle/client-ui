@@ -1,2 +1,2 @@
 export * from './utils';
-export * as guide from './guide';
+export { default as guide } from './guide';

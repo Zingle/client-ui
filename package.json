@@ -12,14 +12,18 @@
   },
   "license": "MIT",
   "scripts": {
+    "clean": "rm -rf ./dist",
     "lint": "./node_modules/.bin/eslint src --ext js,jsx --quiet",
     "lint-fix": "./node_modules/.bin/eslint src --ext js,jsx --fix",
     "test": "./node_modules/jest/bin/jest.js --notify --detectOpenHandles",
     "test-coverage": "./node_modules/jest/bin/jest.js --detectOpenHandles --coverage --coverageReporters=text-lcov > coverage.report",
-    "coveralls": "./node_modules/.bin/coveralls"
+    "coveralls": "./node_modules/.bin/coveralls",
+    "build": "npm run build:files && npm run build:copy",
+    "build:copy": "cp ./package.json ./dist",
+    "build:files": "babel src --out-dir ./dist --ignore \"**/*.test.js\"",
+    "release": "npm run clean && npm run build && npm publish dist"
   },
   "dependencies": {
-    "@babel/preset-env": "^7.8.7",
     "@zingle/es-util": "0.0.0",
     "aphrodite": "^2.4.0",
     "autoprefixer": "^6.7.7",
@@ -37,7 +41,10 @@
     "scroll-into-view-if-needed": "^2.2.24"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
     "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-dynamic-import-node": "^2.3.0",
@@ -48,5 +55,8 @@
     "eslint-plugin-react": "^7.19.0",
     "esm": "^3.2.25",
     "jest": "^25.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
