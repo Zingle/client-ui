@@ -6,6 +6,10 @@ const OPTIMIZED_RESIZE_EVENT = 'optimizedResize';
 (function(evt) {
     const throttle = function(type, name, obj) {
         obj = obj || root;
+        if (typeof obj.addEventListener !== 'function') {
+            return;
+        }
+
         let running = false;
         const func = function() {
             if (running) { return; }
