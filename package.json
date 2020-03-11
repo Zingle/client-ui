@@ -1,6 +1,6 @@
 {
   "name": "@zingle/ui-components",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Client UI Components",
   "engines": {
     "node": ">=10.18"
