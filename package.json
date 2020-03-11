@@ -1,6 +1,6 @@
 {
   "name": "@zingle/ui-components",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Client UI Components",
   "engines": {
     "node": ">=10.18"
@@ -39,7 +39,8 @@
     "react-feather": "^1.1.6",
     "react-onclickoutside": "^6.9.0",
     "react-router-dom": "^5.1.2",
-    "scroll-into-view-if-needed": "^2.2.24"
+    "scroll-into-view-if-needed": "^2.2.24",
+    "window-or-global": "^1.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",

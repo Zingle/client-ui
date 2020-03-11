@@ -1,8 +1,11 @@
+import root from 'window-or-global';
+
 const OPTIMIZED_RESIZE_EVENT = 'optimizedResize';
+
 // https://developer.mozilla.org/en-US/docs/Web/Events/resize
 (function(evt) {
     const throttle = function(type, name, obj) {
-        obj = obj || window;
+        obj = obj || root;
         let running = false;
         const func = function() {
             if (running) { return; }
