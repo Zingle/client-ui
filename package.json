@@ -1,6 +1,6 @@
 {
   "name": "@zingle/ui-components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Client UI Components",
   "engines": {
     "node": ">=10.18"
@@ -35,6 +35,7 @@
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "react": "^16.0",
+    "react-dom": "^16.13.0",
     "react-feather": "^1.1.6",
     "react-onclickoutside": "^6.9.0",
     "react-router-dom": "^5.1.2",
